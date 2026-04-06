@@ -306,8 +306,4 @@ cat("Output files saved in 'figures/' and 'results/'\n\n")
 cat("Robustness summary:\n")
 print(robustness_summary)
 
-<<<<<<< HEAD
 cat("\n All done. Ready for Royal Society Open Science submission.\n")
-=======
-cat("\n All done. Ready for Royal Society Open Science submission.\n")
->>>>>>> 8561b080ca421b9ce6827802f216a4b4f6d4e3e9
