@@ -1,33 +1,27 @@
 # Borderline CNVs in PGT-A: a simulation study
 
-<<<<<<< HEAD
-[![DOI](https://doi.org/10.5281/zenodo.19420263)
-
-=======
->>>>>>> 8561b080ca421b9ce6827802f216a4b4f6d4e3e9
 ## Overview
+This repository contains reproducible simulation code for the paper:
 
-This repository contains the complete reproducible simulation code for the paper:
+Title: Borderline copy number variations in preimplantation genetic testing: when signal becomes noise
+Authors: Anere Cye
+Journal: Royal Society Open Science (2026)
+DOI: 10.5281/zenodo.19421746
 
-> **Title**: *Borderline copy number variations in preimplantation genetic testing: when signal becomes noise*  
-<<<<<<< HEAD
-> **Authors**: Anere Cye 
-=======
-> **Authors**: Anere Cye
->>>>>>> 8561b080ca421b9ce6827802f216a4b4f6d4e3e9
-> **Journal**: Royal Society Open Science (2026)
+## Repository structure
 
-The code simulates embryo-level CNV detection under different mosaicism levels (0–30%), sequencing coverages (5×, 10×, 20×, 50×), and classification thresholds (0.10–0.20 low, 0.30–0.40 high). It quantifies the proportion of embryos misclassified as "normal" despite clinically significant mosaicism.
+- R/ - simulation functions
+- scripts/ - run_all.R and scenario scripts  
+- results/ - generated automatically
 
-## Requirements
+## How to run
 
-- R (≥4.0)
-- R packages: `tidyverse`, `patchwork`, `scales`
+Open R in the project root and run:
+source(scripts/run_all.R)
 
-Install packages with:
-```r
-<<<<<<< HEAD
-install.packages(c("tidyverse", "patchwork", "scales"))
-=======
-install.packages(c("tidyverse", "patchwork", "scales"))
->>>>>>> 8561b080ca421b9ce6827802f216a4b4f6d4e3e9
+All simulations use set.seed(2025). 5000 replicates per condition.
+
+## Key results (Scenario B, n=5000)
+
+False normal rate M=15%: 34.5% [33.2-35.9%]
+False positive rate diploid: 54.4% [53.0-55.8%]
