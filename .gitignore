@@ -66,3 +66,4 @@ paper/*.fdb_latexmk
 # Zenodo archive files (if any)
 *.zip
 *.tar.gz
+"desktop.ini" 
